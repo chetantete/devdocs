@@ -1,0 +1,690 @@
+repo_name: chetantete/devdocs
+report_id: 6c9c9a0daca726387ce2cdf02e888961
+repo_type: Public
+timestamp: '2023-11-09T08:03:31+00:00'
+requested_by: renovate[bot]
+provider: github
+branch: main
+detected_tools_count: 41
+tools:
+- name: CSS 3
+  description: The latest evolution of the Cascading Style Sheets language
+  website_url: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/6727/css.png
+  detection_source: Repo Metadata
+- name: CoffeeScript
+  description: A little language that compiles into JavaScript
+  website_url: http://coffeescript.org/
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/1178/slQydAMv.png
+  detection_source: Repo Metadata
+- name: JavaScript
+  description: Lightweight, interpreted, object-oriented language with first-class
+    functions
+  website_url: https://developer.mozilla.org/en-US/docs/Web/JavaScript
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/1209/javascript.jpeg
+  detection_source: Repo Metadata
+- name: Ruby
+  description: A dynamic, interpreted, open source programming language with a focus
+    on simplicity and productivity
+  website_url: https://www.ruby-lang.org
+  version: 2.7.3
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/989/ruby.png
+  detection_source_url: Gemfile.lock
+  detection_source: Gemfile.lock
+- name: Sinatra
+  description: Classy web-development dressed in a DSL
+  website_url: http://www.sinatrarb.com/
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Microframeworks (Backend)
+  image_url: https://img.stackshare.io/service/999/logo.png
+  detection_source: Gemfile
+- name: Capybara
+  description: Acceptance test framework for web applications
+  website_url: http://jnicklas.github.io/capybara/
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Testing Frameworks
+  image_url: https://img.stackshare.io/service/2595/capybara.png
+  detection_source: Gemfile
+- name: Docker
+  description: Enterprise Container Platform for High-Velocity Innovation.
+  website_url: https://www.docker.com/
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Virtual Machine Platforms & Containers
+  image_url: https://img.stackshare.io/service/586/n4u37v9t_400x400.png
+  detection_source: Repo Metadata
+- name: Git
+  description: Fast, scalable, distributed revision control system
+  website_url: http://git-scm.com/
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Version Control System
+  image_url: https://img.stackshare.io/service/1046/git.png
+  detection_source: Repo Metadata
+- name: GitHub Actions
+  description: Automate your workflow from idea to production
+  website_url: https://github.com/features/actions
+  open_source: false
+  hosted_saas: true
+  category: Build, Test, Deploy
+  sub_category: Continuous Integration
+  image_url: https://img.stackshare.io/service/11563/actions.png
+  detection_source: ".github/workflows/test.yml"
+- name: New Relic
+  description: New Relic is the industry’s largest and most comprehensive cloud-based
+    observability platform.
+  website_url: http://newrelic.com
+  open_source: false
+  hosted_saas: true
+  category: Monitoring
+  sub_category: Performance Monitoring
+  image_url: https://img.stackshare.io/service/103/default_193410db3a7e419c7b436961bf41d733c7346b59.png
+  detection_source: newrelic.yml
+- name: RubyGems
+  description: Easily download, install, and use ruby software packages on your system
+  website_url: https://rubygems.org/
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/service/12795/5jL6-BA5_400x400.jpeg
+  detection_source: Gemfile
+- name: UglifyJS
+  description: A JavaScript parser, minifier, compressor and beautifier toolkit.
+  website_url: http://lisperator.net/uglifyjs/
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Javascript Utilities & Libraries
+  image_url: https://img.stackshare.io/service/2203/default_9058af6f02375a99f634f537d727e32df92ac262.png
+  detection_source: Gemfile
+- name: activesupport
+  description: A toolkit of support libraries and Ruby core extensions extracted from
+    the Rails framework
+  package_url: https://rubygems.org/activesupport
+  version: 5.2.6
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: RubyGems Packages
+  image_url: https://img.stackshare.io/package/18817/default_b17f14dbef6c1275120b34d9ec2eff5942499bd5.png
+  detection_source_url: Gemfile.lock
+  detection_source: Gemfile
+  vulnerabilities:
+  - name: Possible XSS Security Vulnerability in SafeBuffer#bytesplice
+    cve_id: CVE-2023-28120
+    cve_url: https://github.com/advisories/GHSA-pj73-v5mw-pm9j
+    detected_date: Mar 16
+    severity: moderate
+    first_patched: 6.1.7.3
+  - name: Active Support Possibly Discloses Locally Encrypted Files
+    cve_id: CVE-2023-38037
+    cve_url: https://github.com/advisories/GHSA-cr5q-6q9f-rq6q
+    detected_date: Aug 24
+    severity: low
+    first_patched: 6.1.7.5
+  - name: ReDoS based DoS vulnerability in Active Support's underscore
+    cve_id: CVE-2023-22796
+    cve_url: https://github.com/advisories/GHSA-j6gc-792m-qgm2
+    detected_date: Jan 19
+    severity: low
+    first_patched: 6.1.7.1
+- name: better_errors
+  description: Provides a better error page for Rails and other Rack apps
+  package_url: https://rubygems.org/better_errors
+  version: 2.5.1
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: RubyGems Packages
+  image_url: https://img.stackshare.io/package/19224/default_90da4313847baa579409c050c1ebb8de5a6e0fbc.png
+  detection_source_url: Gemfile.lock
+  detection_source: Gemfile
+  vulnerabilities:
+  - name: Older releases of better_errors open to Cross-Site Request Forgery attack
+    cve_id: CVE-2021-39197
+    cve_url: https://github.com/advisories/GHSA-w3j4-76qw-wwjm
+    detected_date: Sep 8
+    severity: moderate
+    first_patched: 2.8.0
+- name: browser
+  description: Do some browser detection with Ruby
+  package_url: https://rubygems.org/browser
+  version: 2.6.1
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: RubyGems Packages
+  image_url: https://img.stackshare.io/package/19740/default_dd31b4f280886d69f8a43459d55ecc7f1ae44486.png
+  detection_source_url: Gemfile.lock
+  detection_source: Gemfile
+- name: chunky_png
+  description: This pure Ruby library can read and write PNG images without depending
+    on an external image library, like RMagick
+  package_url: https://rubygems.org/chunky_png
+  version: 1.3.11
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: RubyGems Packages
+  image_url: https://img.stackshare.io/package/19118/default_ab0024f54be625eb1e21abc015158fc74b2e3704.png
+  detection_source_url: Gemfile.lock
+  detection_source: Gemfile
+- name: coffee-script
+  description: Ruby CoffeeScript is a bridge to the JS CoffeeScript compiler
+  package_url: https://rubygems.org/coffee-script
+  version: 2.4.1
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: RubyGems Packages
+  image_url: https://img.stackshare.io/package/18979/default_eb163f66039a75cd168fad8a88ccdb68b82bccff.png
+  detection_source_url: Gemfile.lock
+  detection_source: Gemfile
+- name: html-pipeline
+  description: GitHub HTML processing filters and utilities
+  package_url: https://rubygems.org/html-pipeline
+  version: 2.12.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: RubyGems Packages
+  image_url: https://img.stackshare.io/package/19386/default_b0770ebdd12e1eb479a98261d0175b1714524f87.png
+  detection_source_url: Gemfile.lock
+  detection_source: Gemfile
+- name: image_optim
+  description: Command line tool and ruby interface to optimize
+  package_url: https://rubygems.org/image_optim
+  version: 0.26.5
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: RubyGems Packages
+  image_url: https://img.stackshare.io/package/19798/default_5acb201e8340ca5b337b8c46c2fcaff7aa0db0ec.png
+  detection_source_url: Gemfile.lock
+  detection_source: Gemfile
+- name: minitest
+  description: Minitest provides a complete suite of testing facilities supporting
+    TDD, BDD, mocking, and benchmarking
+  package_url: https://rubygems.org/minitest
+  version: 5.14.4
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: RubyGems Packages
+  image_url: https://img.stackshare.io/package/18818/default_f36df1cfa9ff6061d7f9b4879088be8538581c49.png
+  detection_source_url: Gemfile.lock
+  detection_source: Gemfile
+- name: net-sftp
+  description: A pure Ruby implementation of the SFTP client protocol
+  package_url: https://rubygems.org/net-sftp
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: RubyGems Packages
+  image_url: https://img.stackshare.io/package/19106/default_92b412aaa5197ea1fc2d70a503018e4186714110.png
+  detection_source: Gemfile
+- name: newrelic_rpm
+  description: New Relic is a performance management system, developed by New Relic,
+    Inc
+  package_url: https://rubygems.org/newrelic_rpm
+  version: 6.7.0
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: RubyGems Packages
+  image_url: https://img.stackshare.io/package/19246/default_518f3430d0c3ea4653c591ebd7e75da67f51cfaf.png
+  detection_source_url: Gemfile.lock
+  detection_source: Gemfile
+- name: nokogiri
+  description: Nokogiri
+  package_url: https://rubygems.org/nokogiri
+  version: 1.10.4
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: RubyGems Packages
+  image_url: https://img.stackshare.io/package/18823/default_b8fbb83e23c963442e15398c5b56262cc6267d6f.png
+  detection_source_url: Gemfile.lock
+  detection_source: Gemfile
+  vulnerabilities:
+  - name: libxml as used in Nokogiri has an infinite loop in a certain end-of-file
+      situation
+    cve_id: CVE-2020-7595
+    cve_url: https://github.com/advisories/GHSA-7553-jr98-vx47
+    detected_date: Aug 22
+    severity: high
+    first_patched: 1.10.8
+  - name: Nokogiri Implements libxml2 version vulnerable to use-after-free
+    cve_id: CVE-2021-3518
+    cve_url: https://github.com/advisories/GHSA-v4f8-2847-rwm7
+    detected_date: Jul 6
+    severity: high
+    first_patched: 1.11.4
+  - name: Nokogiri affected by zlib's Out-of-bounds Write vulnerability
+    cve_id: CVE-2018-25032
+    cve_url: https://github.com/advisories/GHSA-jc36-42cf-vqwj
+    detected_date: Jun 28
+    severity: high
+    first_patched: 1.13.4
+  - name: Improper Restriction of XML External Entity Reference (XXE) in Nokogiri
+      on JRuby
+    cve_id: CVE-2021-41098
+    cve_url: https://github.com/advisories/GHSA-2rr5-8q37-2w7h
+    detected_date: Sep 28
+    severity: high
+    first_patched: 1.12.5
+  - name: Nokogiri Inefficient Regular Expression Complexity
+    cve_id: CVE-2022-24836
+    cve_url: https://github.com/advisories/GHSA-crjr-9rc5-ghw8
+    detected_date: Apr 12
+    severity: high
+    first_patched: 1.13.4
+  - name: Nokogiri Improperly Handles Unexpected Data Type
+    cve_id: CVE-2022-29181
+    cve_url: https://github.com/advisories/GHSA-xh29-r2w5-wx8m
+    detected_date: May 24
+    severity: high
+    first_patched: 1.13.6
+  - name: Nokogiri contains libxml Out-of-bounds Write vulnerability
+    cve_id: CVE-2021-3517
+    cve_url: https://github.com/advisories/GHSA-jw9f-hh49-cvp9
+    detected_date: Mar 9
+    severity: high
+    first_patched: 1.11.4
+  - name: Nokogiri implementation of libxslt vulnerable to heap corruption
+    cve_id: CVE-2019-5815
+    cve_url: https://github.com/advisories/GHSA-vmfx-gcfq-wvm2
+    detected_date: Jul 8
+    severity: high
+    first_patched: 1.10.5
+  - name: Nokogiri affected by libxslt Use of Uninitialized Resource/Use After Free
+      vulnerability
+    cve_id: CVE-2019-18197
+    cve_url: https://github.com/advisories/GHSA-242x-7cm6-4w8j
+    detected_date: Jul 8
+    severity: high
+    first_patched: 1.10.5
+  - name: Uninitialized read in Nokogiri gem
+    cve_id: CVE-2019-13117
+    cve_url: https://github.com/advisories/GHSA-4hm9-844j-jmxp
+    detected_date: Jun 10
+    severity: high
+    first_patched: 1.10.5
+  - name: Nokogiri has vulnerable dependencies on libxml2 and libxslt
+    cve_id: CVE-2021-30560
+    cve_url: https://github.com/advisories/GHSA-59gp-qqm7-cw4j
+    detected_date: Jun 28
+    severity: high
+    first_patched: 1.13.2
+  - name: Integer Overflow or Wraparound in libxml2 affects Nokogiri
+    cve_id: 
+    cve_url: https://github.com/advisories/GHSA-cgx6-hpwq-fhv5
+    detected_date: May 19
+    severity: high
+    first_patched: 1.13.5
+  - name: Vulnerable dependencies in Nokogiri
+    cve_id: 
+    cve_url: https://github.com/advisories/GHSA-fq42-c5rg-92c2
+    detected_date: Feb 26
+    severity: high
+    first_patched: 1.13.2
+  - name: Denial of Service (DoS) in Nokogiri on JRuby
+    cve_id: 
+    cve_url: https://github.com/advisories/GHSA-gx8x-g87m-h5q6
+    detected_date: Apr 12
+    severity: high
+    first_patched: 1.13.4
+  - name: Out-of-bounds Write in zlib affects Nokogiri
+    cve_id: 
+    cve_url: https://github.com/advisories/GHSA-v6gp-9mmm-c6p5
+    detected_date: Apr 12
+    severity: high
+    first_patched: 1.13.4
+  - name: libxslt Type Confusion vulnerability that affects Nokogiri
+    cve_id: CVE-2019-13118
+    cve_url: https://github.com/advisories/GHSA-cf46-6xxh-pc75
+    detected_date: Mar 9
+    severity: high
+    first_patched: 1.10.5
+  - name: Nokogiri::XML::Schema trusts input by default, exposing risk of XXE vulnerability
+    cve_id: CVE-2020-26247
+    cve_url: https://github.com/advisories/GHSA-vr8q-g5c7-m54m
+    detected_date: Aug 22
+    severity: moderate
+    first_patched: 1.11.0
+  - name: Nokogiri updates packaged libxml2 to v2.10.4 to resolve multiple CVEs
+    cve_id: 
+    cve_url: https://github.com/advisories/GHSA-pxvg-2qj5-37jq
+    detected_date: Apr 12
+    severity: moderate
+    first_patched: 1.14.3
+  - name: Nokogiri Implements libxml2 version vulnerable to null pointer dereferencing
+    cve_id: CVE-2021-3537
+    cve_url: https://github.com/advisories/GHSA-286v-pcf5-25rc
+    detected_date: Jul 6
+    severity: moderate
+    first_patched: 1.11.4
+  - name: Update bundled libxml2 to v2.10.3 to resolve multiple CVEs
+    cve_id: 
+    cve_url: https://github.com/advisories/GHSA-2qc6-mcvw-92cw
+    detected_date: Oct 18
+    severity: moderate
+    first_patched: 1.13.9
+  - name: XML Injection in Xerces Java affects Nokogiri
+    cve_id: 
+    cve_url: https://github.com/advisories/GHSA-xxx9-3xcr-gjj3
+    detected_date: Apr 12
+    severity: moderate
+    first_patched: 1.13.4
+  - name: Nokogiri updates packaged dependency on libxml2 from 2.9.10 to 2.9.12
+    cve_id: 
+    cve_url: https://github.com/advisories/GHSA-7rrm-v45f-jp64
+    detected_date: Aug 22
+    severity: moderate
+    first_patched: 1.11.4
+- name: progress_bar
+  description: 'Give people feedback about long-running tasks without overloading
+    them with information: Use a progress bar'
+  package_url: https://rubygems.org/progress_bar
+  version: 1.3.0
+  license: WTFPL
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: RubyGems Packages
+  image_url: https://img.stackshare.io/package/19696/default_2312d4d1847ef96af6bbd57ed9959234ab92321c.png
+  detection_source_url: Gemfile.lock
+  detection_source: Gemfile
+- name: pry
+  description: An IRB alternative and runtime developer console
+  package_url: https://rubygems.org/pry
+  version: 0.14.1
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: RubyGems Packages
+  image_url: https://img.stackshare.io/package/18815/default_f582e4648f4682adb72d2b201218cda7f8e894ac.png
+  detection_source_url: Gemfile.lock
+  detection_source: Gemfile
+- name: rack
+  description: Rack provides a minimal, modular and adaptable interface for developing
+    web applications in Ruby
+  package_url: https://rubygems.org/rack
+  version: 2.2.3
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: RubyGems Packages
+  image_url: https://img.stackshare.io/package/18839/default_db5cfb0d85d9fd8bfb40a863581417a2a57791ab.png
+  detection_source_url: Gemfile.lock
+  detection_source: Gemfile
+  vulnerabilities:
+  - name: Possible shell escape sequence injection vulnerability in Rack
+    cve_id: CVE-2022-30123
+    cve_url: https://github.com/advisories/GHSA-wq4h-7r42-5hrr
+    detected_date: May 28
+    severity: critical
+    first_patched: 2.2.3.1
+  - name: Rack has possible DoS Vulnerability in Multipart MIME parsing
+    cve_id: CVE-2023-27530
+    cve_url: https://github.com/advisories/GHSA-3h57-hmj3-gj3p
+    detected_date: Mar 9
+    severity: high
+    first_patched: 2.2.6.3
+  - name: Denial of service via header parsing in Rack
+    cve_id: CVE-2022-44570
+    cve_url: https://github.com/advisories/GHSA-65f5-mfpf-vfhj
+    detected_date: Jan 19
+    severity: high
+    first_patched: 2.2.6.2
+  - name: Denial of Service Vulnerability in Rack Multipart Parsing
+    cve_id: CVE-2022-30122
+    cve_url: https://github.com/advisories/GHSA-hxqx-xwvh-44m2
+    detected_date: May 28
+    severity: high
+    first_patched: 2.2.3.1
+  - name: Denial of Service Vulnerability in Rack Content-Disposition parsing
+    cve_id: CVE-2022-44571
+    cve_url: https://github.com/advisories/GHSA-93pm-5p5f-3ghx
+    detected_date: Jan 19
+    severity: low
+    first_patched: 2.2.6.1
+  - name: Denial of service via multipart parsing in Rack
+    cve_id: CVE-2022-44572
+    cve_url: https://github.com/advisories/GHSA-rqv2-275x-2jq5
+    detected_date: Jan 19
+    severity: low
+    first_patched: 2.2.6.1
+  - name: Possible Denial of Service Vulnerability in Rack's header parsing
+    cve_id: CVE-2023-27539
+    cve_url: https://github.com/advisories/GHSA-c6qg-cjj8-47qp
+    detected_date: Mar 16
+    severity: low
+    first_patched: 2.2.6.4
+- name: rack-test
+  description: Rack::Test is a small, simple testing API for Rack apps
+  package_url: https://rubygems.org/rack-test
+  version: 1.1.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: RubyGems Packages
+  image_url: https://img.stackshare.io/package/18845/default_db5cfb0d85d9fd8bfb40a863581417a2a57791ab.png
+  detection_source_url: Gemfile.lock
+  detection_source: Gemfile
+- name: rake
+  description: Rake is a Make-like program implemented in Ruby
+  package_url: https://rubygems.org/rake
+  version: 13.0.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: RubyGems Packages
+  image_url: https://img.stackshare.io/package/18812/default_f582e4648f4682adb72d2b201218cda7f8e894ac.png
+  detection_source_url: Gemfile.lock
+  detection_source: Gemfile
+- name: rr
+  description: RR is a test double framework that features a rich selection of double
+    techniques and a terse syntax
+  package_url: https://rubygems.org/rr
+  version: 1.2.1
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: RubyGems Packages
+  image_url: https://img.stackshare.io/package/18915/default_353d3fd998e68372ebd6d80dbb4c0632f387d091.png
+  detection_source_url: Gemfile.lock
+  detection_source: Gemfile
+- name: sass
+  description: Ruby Sass is deprecated! See https://sass-lang.com/ruby-sass for details
+  package_url: https://rubygems.org/sass
+  version: 3.7.4
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: RubyGems Packages
+  image_url: https://img.stackshare.io/package/18882/default_b1cb499f3e62fe773109c989f76e3365fbe49857.png
+  detection_source_url: Gemfile.lock
+  detection_source: Gemfile
+- name: selenium-webdriver
+  description: WebDriver is a tool for writing automated tests of websites
+  package_url: https://rubygems.org/selenium-webdriver
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: RubyGems Packages
+  image_url: https://img.stackshare.io/package/18901/default_f0ad2b1ffbe10fdd866f9f8e5f812599d9e8085b.png
+  detection_source: Gemfile
+- name: sinatra-contrib
+  description: Collection of useful Sinatra extensions
+  package_url: https://rubygems.org/sinatra-contrib
+  version: 2.0.7
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: RubyGems Packages
+  image_url: https://img.stackshare.io/package/19010/default_4361ccfae4dee655802081d8182ddcaebd7a2b3f.png
+  detection_source_url: Gemfile.lock
+  detection_source: Gemfile
+- name: sprockets
+  description: Sprockets is a Rack-based asset packaging system that concatenates
+    and serves JavaScript
+  package_url: https://rubygems.org/sprockets
+  version: 3.7.2
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: RubyGems Packages
+  image_url: https://img.stackshare.io/package/18932/default_36bbb38c1cd5521e90d6e99982778960b00ec515.png
+  detection_source_url: Gemfile.lock
+  detection_source: Gemfile
+- name: sprockets-helpers
+  description: Asset path helpers for Sprockets 2.x &amp;amp; 3.x applications
+  package_url: https://rubygems.org/sprockets-helpers
+  version: 1.2.1
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: RubyGems Packages
+  image_url: https://img.stackshare.io/package/19732/default_be22d39d0c697424d0da2019daf25b87c93b4c6e.png
+  detection_source_url: Gemfile.lock
+  detection_source: Gemfile
+- name: sprockets-sass
+  description: When using Sprockets 2.0 with Sass you will eventually run into a pretty
+    big issue
+  package_url: https://rubygems.org/sprockets-sass
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: RubyGems Packages
+  image_url: https://img.stackshare.io/package/19683/default_5a5984fb57132e73bff841a1ebf058577d3c8cb9.png
+  detection_source: Gemfile
+- name: terminal-table
+  description: Simple, feature rich ascii table generation library
+  package_url: https://rubygems.org/terminal-table
+  version: 1.8.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: RubyGems Packages
+  image_url: https://img.stackshare.io/package/18923/default_401820e785202ca0018a36ea3e12ee9a92b3efac.png
+  detection_source_url: Gemfile.lock
+  detection_source: Gemfile
+- name: thin
+  description: A thin and fast web server
+  package_url: https://rubygems.org/thin
+  version: 1.8.1
+  license: GPL-2.0+,Ruby
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: RubyGems Packages
+  image_url: https://img.stackshare.io/package/18900/default_f0ad2b1ffbe10fdd866f9f8e5f812599d9e8085b.png
+  detection_source_url: Gemfile.lock
+  detection_source: Gemfile
+- name: thor
+  description: Thor is a toolkit for building powerful command-line interfaces
+  package_url: https://rubygems.org/thor
+  version: 0.20.3
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: RubyGems Packages
+  image_url: https://img.stackshare.io/package/18827/default_fa0604c1b3b2c413c942b4fa310935704d314c2f.png
+  detection_source_url: Gemfile.lock
+  detection_source: Gemfile
+- name: typhoeus
+  description: Like a modern code version of the mythical beast with 100 serpent heads
+  package_url: https://rubygems.org/typhoeus
+  version: 1.3.1
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: RubyGems Packages
+  image_url: https://img.stackshare.io/package/18891/default_b7088ec778267614a78a5a472c67252ec1721d10.png
+  detection_source_url: Gemfile.lock
+  detection_source: Gemfile
+- name: uglifier
+  description: Uglifier minifies JavaScript files by wrapping UglifyJS to be accessible
+    in Ruby
+  package_url: https://rubygems.org/uglifier
+  version: 4.2.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: RubyGems Packages
+  image_url: https://img.stackshare.io/package/18967/default_20d16c1471b93397c8ef93b19baf0989f59663c0.png
+  detection_source_url: Gemfile.lock
+  detection_source: Gemfile
+- name: yajl-ruby
+  description: Ruby C bindings to the excellent Yajl JSON stream-based parser library
+  package_url: https://rubygems.org/yajl-ruby
+  version: 1.4.1
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: RubyGems Packages
+  image_url: https://img.stackshare.io/package/18895/default_9386886dd1c6c396a11bd4b49732afb9ec444f8d.png
+  detection_source_url: Gemfile.lock
+  detection_source: Gemfile
+  vulnerabilities:
+  - name: Buffer Overflow in yajl-ruby
+    cve_id: CVE-2022-24795
+    cve_url: https://github.com/advisories/GHSA-jj47-x69x-mxrm
+    detected_date: Apr 6
+    severity: moderate
+    first_patched: 1.4.3
